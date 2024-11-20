@@ -1,0 +1,334 @@
+/* Основні стилі */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about {
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Загальні стилі для секції */
+#about {
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Контейнер з текстом і зображенням */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Вирівнює зображення по вертикалі */
+  gap: 30px; /* Відступ між текстом і зображенням */
+}
+
+/* Текстова частина */
+.text {
+  flex: 2; /* Текст займає більше місця, ніж зображення */
+}
+
+.text h2:first-of-type {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.text h2:last-of-type {
+  font-size: 28px;
+  color: #720d3b;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.text strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.text .highlight {
+  font-weight: bold;
+  color: #aa1a6c;
+}
+
+/* Зображення по центру праворуч */
+.image {
+  flex: 1; /* Зображення займає менше простору */
+  display: flex;
+  justify-content: center; /* Вирівнювання по горизонталі */
+  align-items: center; /* Вирівнювання по вертикалі */
+}
+
+.image img {
+  max-width: 100%; /* Адаптація розміру зображення */
+  max-height: 400px; /* Максимальна висота зображення */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Загальні стилі для секції */
+#lab {
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+/* Контейнер з текстом і зображенням */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Вирівнює зображення і текст по вертикалі */
+  gap: 30px; /* Відступ між зображенням і текстом */
+}
+
+/* Зображення ліворуч */
+.image {
+  flex: 1; /* Зображення займає менше простору */
+  display: flex;
+  justify-content: center; /* Вирівнювання по горизонталі */
+  align-items: center; /* Вирівнювання по вертикалі */
+}
+
+.image img {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Текст праворуч */
+.text {
+  flex: 2; /* Текст займає більше простору */
+  text-align: justify; /* Вирівнювання тексту по ширині */
+}
+
+.text h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.text ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.text ul li {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+/* Загальні стилі для секції */
+#guarantee {
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+/* Контейнер з текстом і зображенням */
+#guarantee .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Вирівнює зображення і текст по вертикалі */
+  gap: 30px; /* Відступ між зображенням і текстом */
+}
+
+/* Зображення ліворуч */
+#guarantee .image {
+  flex: 1; /* Зображення займає менше простору */
+  display: flex;
+  justify-content: center; /* Вирівнювання по горизонталі */
+  align-items: center; /* Вирівнювання по вертикалі */
+}
+
+#guarantee .image img {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Текст праворуч */
+#guarantee .text {
+  flex: 2; /* Текст займає більше простору */
+  text-align: justify; /* Вирівнювання тексту по ширині */
+}
+
+#guarantee .text h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#guarantee .text p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+#map iframe {
+  width: 100%;
+  height: 500px;
+  border: 0;
+}
+.social-icons img {
+  width: 24px; /* Set the icon width to 24px */
+  height: 24px; /* Set the icon height to 24px */
+  margin: 0 8px; /* Space between icons (reduced margin) */
+}
+
+.social-icons .social-icon {
+  width: 16px; /* Set the icon width to 16px */
+  height: 16px; /* Set the icon height to 16px */
+  margin: 0 5px; /* Reduced space between icons */
+}
+.hero-section {
+  padding: 50px 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.hero-section:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Додано тінь при наведенні */
+}
+
+.hero-title {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase; /* Великі літери */
+  letter-spacing: 2px; /* Інтервал між літерами */
+  transition: color 0.3s ease;
+}
+
+.hero-title:hover {
+  color: #0078d7; /* Зміна кольору при наведенні */
+}
+
+.hero-info {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.hero-info span {
+  display: block;
+  margin: 10px 0;
+  color: #0078d7; /* Стиль з акцентним кольором */
+}
+
+.hero-image {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.05); /* Легке збільшення при наведенні */
+}
+
+/* Мобільні стилі */
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-info {
+    font-size: 16px;
+  }
+
+  .hero-image {
+    max-width: 300px;
+  }
+
+  .hero-section {
+    padding: 30px 10px;
+  }
+
+  .App-header {
+    flex-direction: column; /* Переносимо заголовок і меню в стовпчик */
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column; /* Виводимо елементи списку в стовпчик на маленьких екранах */
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Додаємо вертикальні відступи між пунктами меню */
+    width: 100%; /* Додаємо ширину 100% для елементів */
+  }
+
+  .App-header h1 {
+    margin-bottom: 20px; /* Відступ між заголовком і меню */
+  }
+}
