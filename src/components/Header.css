@@ -1,73 +1,149 @@
+/* Загальні стилі для заголовка */
 .App-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #282c34;
-    padding: 20px;
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .App-header h1 {
-    margin: 0;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-  }
-  
-  nav ul li:last-child {
-    margin-right: 0;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #0078d7;
-    text-decoration: underline;
-  }
-  
-  .quick-check-button {
-    background: linear-gradient(90deg, #ff6a00, #ff9500); /* Градієнт кольорів */
-    color: white;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 50px; /* Округлі краї */
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: all 0.3s ease; /* Плавний перехід для ефектів */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тінь для об’єму */
-    text-transform: uppercase; /* Великі літери */
-  }
-  
-  .quick-check-button:hover {
-    background: linear-gradient(90deg, #ff9500, #ff6a00); /* Зміна напрямку градієнта */
-    transform: translateY(-3px); /* Легке піднімання при наведенні */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Глибша тінь при наведенні */
-  }
-  
-  .quick-check-button:active {
-    transform: translateY(0); /* Зворотній ефект при натисканні */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Повертаємо попередню тінь */
-  }
-  
-  .quick-check-button:focus {
-    outline: none; /* Прибираємо стандартну обводку */
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0078d7;
+  color: white;
+}
+
+.App-header h1 {
+  font-size: 24px;
+}
+
+.App-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.App-header nav ul li {
+  display: inline;
+}
+
+.App-header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.quick-check-button {
+  background-color: #ffc107;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quick-check-button:hover {
+  background-color: #e0a800;
+}
+
+/* Модальне вікно */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+}
+
+.modal-content .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.modal-content .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.modal-content .form-group input,
+.modal-content .form-group textarea,
+.modal-content .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.modal-content .form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-content .submit-btn {
+  background-color: #0078d7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content .submit-btn:hover {
+  background-color: #0056a3;
+}
+
+.modal-content .close-btn {
+  background-color: #ccc;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content .close-btn:hover {
+  background-color: #aaa;
+}
+.quick-check-button {
+  background: linear-gradient(90deg, #ff6a00, #ff9500); /* Градієнт кольорів */
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 50px; /* Округлі краї */
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease; /* Плавний перехід для ефектів */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тінь для об’єму */
+  text-transform: uppercase; /* Великі літери */
+}
+
+.quick-check-button:hover {
+  background: linear-gradient(90deg, #ff9500, #ff6a00); /* Зміна напрямку градієнта */
+  transform: translateY(-3px); /* Легке піднімання при наведенні */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Глибша тінь при наведенні */
+}
+
+.quick-check-button:active {
+  transform: translateY(0); /* Зворотній ефект при натисканні */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Повертаємо попередню тінь */
+}
+
+.quick-check-button:focus {
+  outline: none; /* Прибираємо стандартну обводку */
+}
